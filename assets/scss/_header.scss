@@ -69,7 +69,7 @@
   }
 }
 .bottom-header {
-  border-bottom: 1px solid black;
+    border-bottom: 1px solid #ededed;
   .container {
     .row {
       height: 100px;
@@ -126,6 +126,10 @@
                   background-color: #fab700;
                   color: #fff;
                 }
+              }
+              .drop-acive{
+                background-color: #fab700;
+                color: #fff;
               }
             }
           }

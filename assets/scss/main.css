@@ -115,7 +115,7 @@
 }
 
 .bottom-header {
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #ededed;
 }
 .bottom-header .container .row {
   height: 100px;
@@ -175,6 +175,10 @@
   transition: all 0.15s linear;
 }
 .bottom-header .container .row .navList .navItem .dropdown-list .dropdown-item a:hover {
+  background-color: #fab700;
+  color: #fff;
+}
+.bottom-header .container .row .navList .navItem .dropdown-list .dropdown-item .drop-acive {
   background-color: #fab700;
   color: #fff;
 }
