@@ -1,0 +1,184 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  line-height: 24px;
+  font-size: 14px;
+  color: #777777;
+  text-align: left;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.row {
+  display: flex;
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    min-width: 1140px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1170px;
+  }
+}
+.header {
+  width: 100%;
+}
+.header .top-header {
+  width: 100%;
+  border-bottom: 1px solid #eeeeee;
+  height: 45px;
+}
+.header .top-header .container .row {
+  justify-content: space-between;
+  align-items: center;
+}
+.header .top-header .container .row .iconList {
+  display: flex;
+  gap: 17px;
+}
+.header .top-header .container .row .iconList .iconItem a {
+  display: inline-block;
+  line-height: 45px;
+}
+.header .top-header .container .row .iconList .iconItem a i {
+  color: #ccc;
+  font-size: 12px;
+  transition: 0.5s ease;
+}
+.header .top-header .container .row .iconList .iconItem a i:hover {
+  color: #fab700;
+}
+.header .top-header .container .row .top-header-right {
+  height: auto;
+  display: flex;
+  align-items: center;
+}
+.header .top-header .container .row .top-header-right .custom-select select {
+  height: 30px;
+  border: 1px solid #eeeeee;
+  border-radius: 3px;
+  line-height: 28px;
+  font-size: 12px;
+  font-weight: 500;
+  padding-left: 15px;
+  padding-right: 17px;
+  color: #777777;
+  background: #f9f9ff;
+  margin-right: 5px;
+  outline: none;
+}
+.header .top-header .container .row .top-header-right .top-header-btn {
+  line-height: 28px;
+  border: 1px solid #fab700;
+  display: inline-block;
+  background: #fab700;
+  padding: 0px 19px;
+  font-size: 12px;
+  font-weight: 500;
+  color: #fff;
+  transition: all 0.3s linear 0s;
+  border-radius: 3px;
+}
+.header .top-header .container .row .top-header-right .top-header-btn:hover {
+  background: transparent;
+  color: #222222;
+  border-color: #fab700;
+}
+
+.bottom-header {
+  border-bottom: 1px solid black;
+}
+.bottom-header .container .row {
+  height: 100px;
+  justify-content: space-between;
+  align-items: center;
+}
+.bottom-header .container .row .navList {
+  display: flex;
+  gap: 45px;
+}
+.bottom-header .container .row .navList .navItem {
+  position: relative;
+}
+.bottom-header .container .row .navList .navItem .active {
+  color: #fab700;
+}
+.bottom-header .container .row .navList .navItem a {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  color: #222222;
+  text-transform: uppercase;
+  display: inline-block;
+  transition: all 0.3s ease-in-out;
+}
+.bottom-header .container .row .navList .navItem a i {
+  color: #222222;
+  font-size: 12px;
+  font-weight: 600;
+}
+.bottom-header .container .row .navList .navItem a:hover {
+  color: #fab700;
+}
+.bottom-header .container .row .navList .navItem .dropdown-list {
+  position: absolute;
+  top: 63px;
+  left: 0px;
+  min-width: 200px;
+  text-align: left;
+  opacity: 0;
+  transition: all 300ms ease-in;
+  visibility: hidden;
+  display: block;
+  background: #fff;
+}
+.bottom-header .container .row .navList .navItem .dropdown-list .dropdown-item {
+  border-bottom: 1px solid #ededed;
+  font-size: 16px;
+  color: #212529;
+  transition: all 0.4s linear;
+}
+.bottom-header .container .row .navList .navItem .dropdown-list .dropdown-item a {
+  line-height: 45px;
+  color: #222222;
+  padding: 0px 30px;
+  display: block;
+  transition: all 0.15s linear;
+}
+.bottom-header .container .row .navList .navItem .dropdown-list .dropdown-item a:hover {
+  background-color: #fab700;
+  color: #fff;
+}
+.bottom-header .container .row .navList #dropdown:hover .dropdown-list {
+  visibility: visible;
+  opacity: 1;
+}/*# sourceMappingURL=main.css.map */
