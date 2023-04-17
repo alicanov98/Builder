@@ -1,4 +1,9 @@
-@import"./base";
-@import"./header";
-@import"./index";
-@import"./footer";
+// Global styles
+@import "./base";
+
+// Components
+@import "./components/header";
+@import "./components/footer";
+
+// Pages
+@import "./pages/index";
