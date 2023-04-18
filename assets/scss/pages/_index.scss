@@ -1,15 +1,194 @@
+//* --------------------------- START HOME SECTION --------------------------- */
 .home {
   width: 100%;
-    min-height: 700px;
-      background: url(../image/home-banner.jpg.webp);
-      background-position: center center;
-      background-repeat: no-repeat;
-      background-size: cover;
-      object-fit: cover;
-      left: 0;
-      right: 0;
-      top: 0;
-      z-index: -1;
+  min-height: 700px;
+  background: url(../image/home-banner.jpg.webp);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: cover;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: -1;
+  .container {
+    .row {
+      width: 100%;
+      height: 700px;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      h1 {
+        font-size: 60px;
+        font-family: "Oswald", sans-serif;
+        margin-bottom: 20px;
+        font-weight: normal;
+        color: #fff;
+        span {
+          background: #fab700;
+          border-radius: 4px;
+          line-height: 60px;
+          color: #222222;
+          padding: 2px 4px 5px;
+          display: inline-block;
+          font-size: 60px;
+          font-family: "Oswald", sans-serif;
+        }
+      }
+      p {
+        font-size: 14px;
+        line-height: 24px;
+        font-family: "Roboto", sans-serif;
+        font-weight: normal;
+        max-width: 500px;
+        margin: 0 auto;
+        text-align: center;
+        color: #fff;
+      }
+      .home-btn {
+        margin-top: 40px;
+        display: inline-block;
+        padding: 0px 44px;
+        font-size: 13px;
+        line-height: 50px;
+        font-weight: 500;
+        border-radius: 5px;
+        transition: all 0.4s ease;
+        font-family: "Roboto", sans-serif;
+        color: #fab700;
+        background: #222222;
+        &:hover {
+          background: #fab700;
+          color: #222222;
+        }
+      }
     }
-  
-
+  }
+}
+//* -------------------------------- Responsve ------------------------------- */
+@media (max-width: 768px) {
+  .home {
+    min-height: 500px;
+    .container {
+      .row {
+        height: 500px;
+        h1 {
+          font-size: 30px;
+          span {
+            font-size: 30px;
+            line-height: 45px;
+            padding-bottom: 0px;
+            padding-top: 0px;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width:576px) {
+  .home {
+    min-height: 400px;
+    .container {
+      .row {
+        height: 400px;
+        padding: 30px 15px;
+        margin-top: 0px;
+        h1 {
+          font-size: 24px;
+          span {
+            font-size: 24px;
+          }
+        }
+      }
+    }
+  }
+}
+//* ---------------------------- END HOME SECTION ---------------------------- */
+//? ---------------------------- START SERVICES SECTION ---------------------------- */
+.services {
+  padding: 120px 0;
+  .container {
+    .row {
+      width: 100%;
+      height: 100%;
+      flex-direction: column;
+      justify-content: center;
+      .services-card-box {
+        display: flex;
+        gap: 30px;
+        .services-card {
+          text-align: center;
+          padding: 45px 55px;
+          border-radius: 10px;
+          transition: all 0.4s ease;
+          margin-bottom: 30px;
+          img {
+            margin-bottom: 23px;
+          }
+          a {
+            cursor: pointer;
+            h4 {
+              font-size: 20px;
+              font-family: "Oswald", sans-serif;
+              color: #222222;
+              margin-bottom: 18px;
+              font-weight: 500;
+            }
+            p {
+              font-size: 14px;
+              margin-bottom: 16px;
+              line-height: 24px;
+            }
+          }
+          &:hover {
+            box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.1);
+          }
+        }
+      }
+    }
+  }
+}
+//* ------------------------------- Responsive ------------------------------- */
+@media (max-width: 992px){
+  .services {
+    padding: 120px 0;
+    .container {
+      .row {
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        justify-content: center;
+        .services-card-box {
+          display: block;
+          gap: 0;
+          .services-card {
+            max-width: 360px;
+            margin: 0px auto 30px;
+          }
+        }
+      }
+    }
+  }
+}
+@media(max-width:576px){
+  .services{
+ padding: 70px 0;
+    .container {
+      .row {
+        .services-card-box {
+          gap: 0;
+          .services-card {
+            padding: 25px 35px;
+            margin-bottom: 20px;
+            a {
+              h4 {
+                font-size: 15px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+//? ---------------------------- END SERVICES SECTION ---------------------------- */
