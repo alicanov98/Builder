@@ -192,3 +192,116 @@
   }
 }
 //? ---------------------------- END SERVICES SECTION ---------------------------- */
+//* -------------------------- START PROJECTS SECTION -------------------------- */
+.projects{
+  width: 100%;
+  .card-projects-box{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    .card-project{
+      flex: 0 0 33.33333%;
+      max-width: 33.333333%;
+      position: relative;
+      img{
+        width: 100%;
+        object-fit: cover;
+        vertical-align: middle;
+      }
+      .card-projects-content{
+        position: absolute;
+        opacity: 0;
+        top: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        text-align: center;
+        transform: translateY(-50%);
+        h3{
+          color: #222222;
+          font-size: 20px;
+          margin-bottom: 0;
+          transition: all 300ms ease;
+          opacity: 0;
+        }
+        p{
+          opacity: 0;
+          margin: 0 18px;
+          font-size: 14px;
+          line-height: 24px;
+          font-family: "Roboto", sans-serif;
+          color: #222222;
+        }
+      }
+      &::before{
+        content: "";
+    background: rgba(250, 183, 0, 0.85);
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transform: scale(0.95);
+    transition: .3s ease all;
+      }
+      &:hover::before{
+        transform: scale(1);
+        opacity: 1;
+      }
+      &:hover{
+        .card-projects-content{
+opacity: 1;
+h3{
+  opacity: 1;
+  margin-bottom: 18px;
+}
+p{
+  opacity: 1;
+}
+        }
+      }
+    }
+  }
+}
+//* ------------------------------- RESPONSIVE ------------------------------- */
+@media(max-width:992px){
+  .projects{
+    .card-projects-box{
+      .card-project{
+        flex: 0 0 50%;
+        max-width: 50%;
+      }
+    }
+  }
+}
+@media(max-width:600px){
+  .projects{
+    .card-projects-box{
+      .card-project{
+        flex: 0 0 100%;
+        max-width: 100%;
+      }
+    }
+  }
+}
+@media(max-width:480px){
+  .projects{
+    .card-projects-box{
+      .card-project{
+        .card-projects-content{
+          h3{
+            font-size: 15px;
+          }
+          p{
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+}
+
+//* -------------------------- END PROJECTS SECTION -------------------------- */

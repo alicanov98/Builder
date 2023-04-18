@@ -490,4 +490,97 @@
   .services .container .row .services-card-box .services-card a h4 {
     font-size: 15px;
   }
+}
+.projects {
+  width: 100%;
+}
+.projects .card-projects-box {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.projects .card-projects-box .card-project {
+  flex: 0 0 33.33333%;
+  max-width: 33.333333%;
+  position: relative;
+}
+.projects .card-projects-box .card-project img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  vertical-align: middle;
+}
+.projects .card-projects-box .card-project .card-projects-content {
+  position: absolute;
+  opacity: 0;
+  top: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  text-align: center;
+  transform: translateY(-50%);
+}
+.projects .card-projects-box .card-project .card-projects-content h3 {
+  color: #222222;
+  font-size: 20px;
+  margin-bottom: 0;
+  transition: all 300ms ease;
+  opacity: 0;
+}
+.projects .card-projects-box .card-project .card-projects-content p {
+  opacity: 0;
+  margin: 0 18px;
+  font-size: 14px;
+  line-height: 24px;
+  font-family: "Roboto", sans-serif;
+  color: #222222;
+}
+.projects .card-projects-box .card-project::before {
+  content: "";
+  background: rgba(250, 183, 0, 0.85);
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transform: scale(0.95);
+  transition: 0.3s ease all;
+}
+.projects .card-projects-box .card-project:hover::before {
+  transform: scale(1);
+  opacity: 1;
+}
+.projects .card-projects-box .card-project:hover .card-projects-content {
+  opacity: 1;
+}
+.projects .card-projects-box .card-project:hover .card-projects-content h3 {
+  opacity: 1;
+  margin-bottom: 18px;
+}
+.projects .card-projects-box .card-project:hover .card-projects-content p {
+  opacity: 1;
+}
+
+@media (max-width: 992px) {
+  .projects .card-projects-box .card-project {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+@media (max-width: 600px) {
+  .projects .card-projects-box .card-project {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+@media (max-width: 480px) {
+  .projects .card-projects-box .card-project .card-projects-content h3 {
+    font-size: 15px;
+  }
+  .projects .card-projects-box .card-project .card-projects-content p {
+    font-size: 12px;
+  }
 }/*# sourceMappingURL=main.css.map */
