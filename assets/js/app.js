@@ -4,6 +4,10 @@ const navItem = document.querySelectorAll(".navItem");
 burgerMenuIcon.addEventListener("click", () => {
   burgerMenuIcon.classList.toggle("active");
 
+  // for (let i = 0; i < navItem[i].length; i++){
+  // navItem.classList.toggle("active"); 
+  // };
+  
   navItem[0].classList.toggle("active");
   navItem[1].classList.toggle("active");
   navItem[2].classList.toggle("active");

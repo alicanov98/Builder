@@ -583,4 +583,257 @@
   .projects .card-projects-box .card-project .card-projects-content p {
     font-size: 12px;
   }
+}
+.meet {
+  width: 100%;
+  padding: 120px 0;
+}
+.meet .container .meet-card-box {
+  width: 100%;
+}
+.meet .container .meet-card-box .row {
+  gap: 30px;
+}
+.meet .container .meet-card-box .row .meet-card {
+  width: 25%;
+}
+.meet .container .meet-card-box .row .meet-card .meet-img {
+  width: 100%;
+  position: relative;
+}
+.meet .container .meet-card-box .row .meet-card .meet-img img {
+  width: 100%;
+  height: 100%;
+  vertical-align: middle;
+}
+.meet .container .meet-card-box .row .meet-card .meet-img .meet-social {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  gap: 20px;
+}
+.meet .container .meet-card-box .row .meet-card .meet-img .meet-social a {
+  font-size: 14px;
+  color: #222222;
+  opacity: 0;
+}
+.meet .container .meet-card-box .row .meet-card .meet-img::before {
+  content: "";
+  background: rgba(250, 183, 0, 0.85);
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: 0.3s ease all;
+}
+.meet .container .meet-card-box .row .meet-card .card-cont {
+  text-align: center;
+  margin-top: 30px;
+}
+.meet .container .meet-card-box .row .meet-card .card-cont h3 {
+  margin-bottom: 5px;
+  color: #222222;
+  font-family: "Oswald", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.2;
+}
+.meet .container .meet-card-box .row .meet-card .card-cont p {
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+  color: #777777;
+  margin-bottom: 0px;
+}
+.meet .container .meet-card-box .row .meet-card:hover .meet-img::before {
+  opacity: 1;
+}
+.meet .container .meet-card-box .row .meet-card:hover .meet-img .meet-social a {
+  opacity: 0.3;
+  transition: 0.3s ease;
+}
+.meet .container .meet-card-box .row .meet-card:hover .meet-img .meet-social a i {
+  font-size: 14px;
+  color: #222222;
+}
+.meet .container .meet-card-box .row .meet-card:hover .meet-img .meet-social a:hover {
+  opacity: 1;
+}
+
+@media (max-width: 992px) {
+  .meet .container .meet-card-box .row {
+    flex-wrap: wrap;
+  }
+  .meet .container .meet-card-box .row .meet-card {
+    flex: 0 0 50%;
+    max-width: 263px;
+    margin: 0px auto;
+  }
+  .meet .container .meet-card-box .row .meet-card .card-cont h3 {
+    margin-bottom: 5px;
+    color: #222222;
+    font-family: "Oswald", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.2;
+  }
+  .meet .container .meet-card-box .row .meet-card .card-cont p {
+    font-size: 14px;
+    font-family: "Roboto", sans-serif;
+    color: #777777;
+    margin-bottom: 0px;
+  }
+}
+@media (max-width: 768px) {
+  .meet .container .meet-card-box {
+    width: 100%;
+  }
+  .meet .container .meet-card-box .row {
+    flex-wrap: wrap;
+  }
+  .meet .container .meet-card-box .row .meet-card {
+    flex: 0 0 50%;
+    width: 50%;
+    max-width: 240px;
+    margin: 0 auto 30px;
+  }
+}
+@media (max-width: 576px) {
+  .meet .container .meet-card-box .row {
+    flex-wrap: wrap;
+    gap: 0px;
+  }
+  .meet .container .meet-card-box .row .meet-card {
+    flex: 0 0 100%;
+    max-width: 263px;
+  }
+}
+.counter {
+  width: 100%;
+  padding: 115px 0px;
+  background: #fab700;
+}
+.counter .container .row {
+  justify-content: space-between;
+}
+.counter .container .row .counter-item {
+  text-align: center;
+}
+.counter .container .row .counter-item h3 {
+  font-size: 48px;
+  font-family: "Oswald", sans-serif;
+  font-weight: 500;
+  color: #222222;
+  margin-bottom: 8px;
+  line-height: 1.2;
+}
+.counter .container .row .counter-item p {
+  margin-bottom: 0px;
+  color: #222222;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+}
+
+@media (max-width: 992px) {
+  .counter .container .row {
+    flex-wrap: wrap;
+  }
+  .counter .container .row .counter-item {
+    flex: 0 0 33%;
+    max-width: 33%;
+  }
+  .counter .container .row .counter-item h3 {
+    font-size: 48px;
+    line-height: 1.7;
+  }
+}
+@media (max-width: 480px) {
+  .counter {
+    padding: 60px 0;
+  }
+  .counter .container .row {
+    flex-wrap: wrap;
+    justify-content: none;
+  }
+  .counter .container .row .counter-item {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 30px;
+  }
+  .counter .container .row .counter-item h3 {
+    line-height: 1.2;
+  }
+}
+.features {
+  width: 100%;
+  padding: 120px 0;
+}
+.features .container .features-card-box {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.features .container .features-card-box .features-card {
+  flex: 0 0 33.3333%;
+  max-width: 350px;
+  background: #fff;
+  border-radius: 10px;
+  padding: 40px 60px 40px 40px;
+  border: 1px solid #eeeeee;
+  transition: 0.5s ease;
+}
+.features .container .features-card-box .features-card h3 {
+  font-size: 18px;
+  font-family: "Oswald", sans-serif;
+  font-weight: 500;
+  color: #222222;
+  margin-bottom: 20px;
+  transition: 0.5s ease;
+}
+.features .container .features-card-box .features-card h3 i {
+  color: #222222;
+  font-size: 24px;
+  padding-right: 15px;
+  transition: 0.5s ease;
+}
+.features .container .features-card-box .features-card:hover {
+  box-shadow: 0px 10px 30px 0px rgba(157, 157, 157, 0.2);
+  border-color: #fff;
+}
+.features .container .features-card-box .features-card:hover h3 {
+  color: #fab700;
+}
+.features .container .features-card-box .features-card:hover h3 i {
+  color: #fab700;
+}
+
+@media (max-width: 992px) {
+  .features .container .features-card-box {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .features .container .features-card-box .features-card {
+    flex: 0 0 50%;
+    max-width: 335px;
+  }
+}
+@media (max-width: 768px) {
+  .features .container .features-card-box .features-card {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+@media (max-width: 290px) {
+  .features .container .features-card-box .features-card h3 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
 }/*# sourceMappingURL=main.css.map */
