@@ -6,11 +6,6 @@
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  object-fit: cover;
-  left: 0;
-  right: 0;
-  top: 0;
-  z-index: -1;
   .container {
     .row {
       width: 100%;
@@ -135,7 +130,7 @@
               font-weight: 500;
             }
             p {
-              font-size: 14px;
+              font-size: 16px;
               margin-bottom: 16px;
               line-height: 24px;
             }
@@ -162,7 +157,6 @@
           display: block;
           gap: 0;
           .services-card {
-            max-width: 360px;
             margin: 0px auto 30px;
           }
         }
@@ -170,7 +164,7 @@
     }
   }
 }
-@media (max-width: 576px) {
+@media (max-width: 768px) {
   .services {
     padding: 70px 0;
     .container {
@@ -178,13 +172,9 @@
         .services-card-box {
           gap: 0;
           .services-card {
-            padding: 25px 35px;
-            margin-bottom: 20px;
-            a {
-              h4 {
-                font-size: 15px;
-              }
-            }
+            padding: 45px 55px;
+            margin-bottom: 30px;
+            // max-width: 360px;
           }
         }
       }
@@ -540,36 +530,40 @@
       width: 100%;
       display: flex;
       flex-wrap: wrap;
-      gap: 30px;
-      .features-card {
-       flex: 0 0 33.3333%;
-        max-width: 350px;
-        background: #fff;
-        border-radius: 10px;
-        padding: 40px 60px 40px 40px;
-        border: 1px solid #eeeeee;
-        transition: .5s ease;
-        h3 {
-          font-size: 18px;
-          font-family: "Oswald", sans-serif;
-          font-weight: 500;
-          color: #222222;
-          margin-bottom: 20px;
-          transition: .5s ease;
-          i {
-            color: #222222;
-            font-size: 24px;
-            padding-right: 15px;
-            transition: .5s ease;
-          }
-        }
-        &:hover {
-          box-shadow: 0px 10px 30px 0px rgba(157, 157, 157, 0.2);
-          border-color: #fff;
+      .topDiv {
+        padding: 0 15px;
+        flex: 0 0 33.3333%;
+        max-width: 33%;
+        margin-bottom: 30px;
+        cursor: pointer;
+        .features-card {
+          background: #fff;
+          border-radius: 10px;
+          padding: 40px 60px 40px 40px;
+          border: 1px solid #eeeeee;
+          transition: 0.5s ease;
           h3 {
-            color: #fab700;
+            font-size: 18px;
+            font-family: "Oswald", sans-serif;
+            font-weight: 500;
+            color: #222222;
+            margin-bottom: 20px;
+            transition: 0.5s ease;
             i {
+              color: #222222;
+              font-size: 24px;
+              padding-right: 15px;
+              transition: 0.5s ease;
+            }
+          }
+          &:hover {
+            box-shadow: 0px 10px 30px 0px rgba(157, 157, 157, 0.2);
+            border-color: #fff;
+            h3 {
               color: #fab700;
+              i {
+                color: #fab700;
+              }
             }
           }
         }
@@ -577,25 +571,24 @@
     }
   }
 }
-@media(max-width:992px){
+@media (max-width: 992px) {
   .features {
     .container {
       .features-card-box {
-        flex-wrap: wrap;
-        gap: 20px;
-        .features-card {
+        .topDiv {
           flex: 0 0 50%;
-          max-width: 335px;
+          max-width: 50%;
         }
       }
     }
   }
 }
-@media(max-width:768px){
+@media (max-width: 768px) {
   .features {
     .container {
+      padding: 0;
       .features-card-box {
-        .features-card {
+        .topDiv {
           flex: 0 0 100%;
           max-width: 100%;
         }
@@ -603,15 +596,21 @@
     }
   }
 }
-@media(max-width:290px){
+@media (max-width: 290px) {
   .features {
     .container {
+      padding: 0 15px;
       .features-card-box {
-        .features-card {
-          h3{
-            display: flex;
-            flex-direction: column;
+        .topDiv {
+          padding: 0;
+          .features-card {
             text-align: center;
+            padding: 10px;
+            h3 {
+              display: flex;
+              flex-direction: column;
+              text-align: center;
+            }
           }
         }
       }
@@ -619,3 +618,60 @@
   }
 }
 //* ------------------------- END FEATURES SECTION ------------------------- */
+//? -------------------------- START SWIPER SECTION -------------------------- */
+.swiper{
+  background: #f9f9ff;
+  .container{
+    padding: 120px 0;
+    .swiper-slide{
+      width: 0;
+      padding: 30px 0;
+      cursor: grab;
+      .card{
+        border: 1px solid #eeeeee;
+      border-radius: 10px;
+        padding: 40px;
+        display: flex;
+        transition: all .3s ease;
+        .card-img{
+          padding-right: 25px;
+          border-radius: 50%;
+          img{
+            width: 80px;
+          }
+        }
+      .card-content{
+        p{
+          margin-bottom: 20px;
+        }
+        h3{
+          color: #222222;
+          font-family: "Oswald", sans-serif;
+          font-weight: 500;
+          font-size: 20px;
+          line-height: 1.2;
+          transition: all .3s ease;
+        }
+        h5{
+          font-size: 14px;
+          color: #777777;
+          font-weight: normal;
+          font-family: "Roboto", sans-serif;
+          line-height: 1.2;
+        }
+      }
+      &:hover{
+        box-shadow: 0px 10px 30px 0px rgba(157, 157, 157, 0.2);
+    background: #fff;
+    border-color: #fff;
+    .card-content{
+      h3{
+        color: #fab700;
+      }
+    }
+      }
+      }
+    }
+  }
+}
+//* -------------------------- END SWIPER SECTION -------------------------- */
