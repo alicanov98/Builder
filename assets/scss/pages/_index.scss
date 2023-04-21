@@ -675,3 +675,30 @@
   }
 }
 //* -------------------------- END SWIPER SECTION -------------------------- */
+//? -------------------------- START CLIENTS SECTION ------------------------- */
+.clients{
+  padding: 120px 0;
+  .container{
+    .clientSwiper{
+      display: flex;
+      justify-content: center;
+      .swiper-wrapper{
+        .swiper-slide{
+          .clients-card{
+            cursor: pointer;
+            line-height: 70px;
+            opacity: .5;
+            transition: all .4s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+         &:hover{
+          opacity: 1;
+         }
+          }
+        }
+      }
+    }
+  }
+}
+//* --------------------------- END CLIENTS SECTION -------------------------- */
