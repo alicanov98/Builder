@@ -7,6 +7,7 @@
                 position: absolute;     
                 width: 100%;
                 height: 100%;
+                object-fit: cover;
             }
             .container{
                 height: 300px;
@@ -47,6 +48,39 @@
 }
 }
             }
+        }
+        @media(max-width:992px){
+            .other-page-home{
+                    .container{
+        .other-page-home-content{
+        .other-title{
+            font-size: 43px;
+        }
+        }
+                    }
+                }
+        }
+        @media(max-width:768px){
+            .other-page-home{
+                    .container{
+        .other-page-home-content{
+        .other-title{
+            font-size: 38px;
+        }
+        }
+                    }
+                }
+        }
+        @media(max-width:576px){
+            .other-page-home{
+                    .container{
+        .other-page-home-content{
+        .other-title{
+            font-size: 30px;
+        }
+        }
+                    }
+                }
         }
 //* ------------------------ END OTHER - HOME SECTION ------------------------ */
 //? ----------------------- START OTHER - ABOUT SECTION ---------------------- */
@@ -109,5 +143,104 @@ flex-wrap: wrap;
         }
     }
 }
+}
+@media(max-width:1200px){
+    .other-about-page{
+    .container{
+        .row{
+            .right-1{
+                .right-image{
+                    height: 350px;
+                }
+            }
+        }
+    }
+    }
+}
+@media(max-width:992px){
+    .other-about-page{
+    .container{
+        .row{
+    flex-direction: column;
+    .left-1{
+        flex: 0 0 100%;
+       max-width: 100%;
+       margin-bottom: 30px;
+        .left-text{
+            padding-right: 0px;
+        }
+    }
+            .right-1{
+                flex: 0 0 85%;
+                max-width: 85%;
+                .right-image{
+                    width: 100%;
+                    height: 450px;
+                    img{
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                }
+            }
+        }
+    }
+    }
+}
+@media(max-width:768px){
+    .other-about-page{
+    .container{
+        .row{
+    flex-direction: column;
+    .left-1{
+        .left-text{
+            padding-right: 0px;
+        }
+    }
+            .right-1{
+                flex: 0 0 100%;
+                max-width: 100%;
+                padding:0px;
+                .right-image{
+                    width: 100%;
+                    height: 450px;
+                    img{
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                }
+            }
+        }
+    }
+    }
+}
+@media(max-width:576px){
+    .other-about-page{
+        .container{
+            .row{
+                .left-1{
+                    .left-text{
+                        h4{
+                            font-size: 26px;
+                        }
+                        a{
+                            padding: 0px 25px;
+                            font-size: 13px;
+                            &:hover{
+                                background: #fab700;
+                                color: #222222;
+                            }
+                        }
+                    }
+                }
+                .right-1{
+                    .right-image{
+                        height: 100%;
+                    }
+                }
+            }
+        }
+        }
 }
 //* ----------------------- END OTHER - ABOUT SECTION ---------------------- */
