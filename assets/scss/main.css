@@ -206,6 +206,7 @@ body {
   visibility: hidden;
   display: block;
   background: #fff;
+  z-index: 10;
 }
 .bottom-header .container .row .nav-bar .navList .navItem .dropdown-list .dropdown-item {
   border-bottom: 1px solid #ededed;
@@ -599,34 +600,39 @@ footer .container .footer-bottom .row .footer-social-icon-list .footer-icon-item
 }
 .services .container .row .services-card-box {
   display: flex;
-  gap: 30px;
+  flex-wrap: wrap;
 }
-.services .container .row .services-card-box .services-card {
+.services .container .row .services-card-box .front-card {
+  flex: 0 0 33.3333%;
+  max-width: 33.3333%;
+  padding: 0 15px;
+}
+.services .container .row .services-card-box .front-card .services-card {
   text-align: center;
   padding: 45px 55px;
   border-radius: 10px;
   transition: all 0.4s ease;
   margin-bottom: 30px;
 }
-.services .container .row .services-card-box .services-card img {
+.services .container .row .services-card-box .front-card .services-card img {
   margin-bottom: 23px;
 }
-.services .container .row .services-card-box .services-card a {
+.services .container .row .services-card-box .front-card .services-card a {
   cursor: pointer;
 }
-.services .container .row .services-card-box .services-card a h4 {
+.services .container .row .services-card-box .front-card .services-card a h4 {
   font-size: 20px;
   font-family: "Oswald", sans-serif;
   color: #222222;
   margin-bottom: 18px;
   font-weight: 500;
 }
-.services .container .row .services-card-box .services-card a p {
+.services .container .row .services-card-box .front-card .services-card a p {
   font-size: 16px;
   margin-bottom: 16px;
   line-height: 24px;
 }
-.services .container .row .services-card-box .services-card:hover {
+.services .container .row .services-card-box .front-card .services-card:hover {
   box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.1);
 }
 
@@ -634,30 +640,30 @@ footer .container .footer-bottom .row .footer-social-icon-list .footer-icon-item
   .services {
     padding: 120px 0;
   }
-  .services .container .row {
-    width: 100%;
-    height: 100%;
-    flex-direction: column;
-    justify-content: center;
-  }
   .services .container .row .services-card-box {
     display: block;
-    gap: 0;
-  }
-  .services .container .row .services-card-box .services-card {
     margin: 0px auto 30px;
+    flex-direction: column;
+  }
+  .services .container .row .services-card-box .front-card {
+    max-width: 360px;
   }
 }
 @media (max-width: 768px) {
   .services {
     padding: 70px 0;
   }
-  .services .container .row .services-card-box {
-    gap: 0;
+}
+@media (max-width: 480px) {
+  .services {
+    padding: 70px 0;
   }
-  .services .container .row .services-card-box .services-card {
-    padding: 45px 55px;
-    margin-bottom: 30px;
+  .services .container .row .services-card-box .front-card {
+    padding: 0;
+  }
+  .services .container .row .services-card-box .front-card .services-card {
+    padding: 20px 30px;
+    margin-bottom: 20px;
   }
 }
 .projects {
