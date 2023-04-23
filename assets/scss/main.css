@@ -363,8 +363,9 @@ footer .container .footer-top .row .footer-card .about-cont {
 }
 footer .container .footer-top .row .footer-card .contact-cont {
   margin-bottom: 15px;
+  color: #999999;
 }
-footer .container .footer-top .row .footer-card a {
+footer .container .footer-top .row .footer-card .tel-con {
   display: block;
   color: #fab700;
   font-size: 24px;
@@ -1280,18 +1281,141 @@ footer .container .footer-bottom .row .footer-social-icon-list .footer-icon-item
   }
 }
 @media (max-width: 576px) {
-  .other-about-page .container .row .left-1 .left-text h4 {
-    font-size: 26px;
+  .other-about-page {
+    padding-bottom: 70px;
   }
-  .other-about-page .container .row .left-1 .left-text a {
-    padding: 0px 25px;
-    font-size: 13px;
+  .other-about-page .container .row .left-1 {
+    padding: 0;
   }
   .other-about-page .container .row .left-1 .left-text a:hover {
     background: #fab700;
     color: #222222;
   }
   .other-about-page .container .row .right-1 .right-image {
-    height: 100%;
+    width: 100%;
+    height: 292px;
   }
+  .other-about-page .container .row .right-1 .right-image img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+.contact {
+  padding: 120px 0;
+}
+.contact .map {
+  height: 420px;
+  margin-bottom: 80px;
+}
+.contact .map .gmap_canvas {
+  overflow: hidden;
+  background: none !important;
+  height: 100%;
+  width: 100%;
+}
+.contact .map .mapouter {
+  position: relative;
+  text-align: right;
+  height: 100%;
+  width: 100%;
+}
+.contact .contact-form .form-left, .contact .row .form-left {
+  width: 26%;
+}
+.contact .contact-form .form-left i, .contact .row .form-left i {
+  font-size: 20px;
+  line-height: 24px;
+  color: #fab700;
+}
+.contact .contact-form .form-left .info, .contact .row .form-left .info {
+  padding-left: 25px;
+}
+.contact .contact-form .form-left .info a, .contact .row .form-left .info a {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: bold;
+  margin-bottom: 0px;
+  color: #222222;
+  font-family: "Oswald", sans-serif;
+}
+.contact .contact-form .form-left .info p, .contact .row .form-left .info p {
+  font-size: 14px;
+  line-height: 24px;
+  padding: 2px 0px;
+  margin-bottom: 16px;
+}
+.contact .contact-form .form-right, .contact .row .form-right {
+  width: 70%;
+}
+.contact .contact-form .form-right form, .contact .row .form-right form {
+  width: 130%;
+  display: flex;
+}
+.contact .contact-form .form-right form .left-inp, .contact .row .form-right form .left-inp {
+  width: 41%;
+  padding-right: 15px;
+  display: flex;
+  flex-direction: column;
+}
+.contact .contact-form .form-right form .left-inp .input-con, .contact .row .form-right form .left-inp .input-con {
+  margin-bottom: 10px;
+  font-size: 13px;
+  line-height: 26px;
+  color: #999;
+  border: 1px solid #eeeeee;
+  font-family: "Roboto", sans-serif;
+  background-color: #fff;
+  display: block;
+  width: 100%;
+  outline: none;
+  height: 39px;
+  padding: 6px 12px;
+}
+.contact .contact-form .form-right form .right-inp, .contact .row .form-right form .right-inp {
+  width: 41%;
+  padding: 0 15px;
+}
+.contact .contact-form .form-right form .right-inp .text-con, .contact .row .form-right form .right-inp .text-con {
+  width: 100%;
+}
+.contact .contact-form .form-right form .right-inp .text-con textarea, .contact .row .form-right form .right-inp .text-con textarea {
+  display: block;
+  width: 100%;
+  height: 137px;
+  padding: 6px 12px;
+  font-size: 13px;
+  line-height: 26px;
+  color: #999;
+  border: 1px solid #eeeeee;
+  font-family: "Roboto", sans-serif;
+  resize: none;
+  outline: none;
+}
+.contact .contact-form .form-right form .right-inp .btn-con, .contact .row .form-right form .right-inp .btn-con {
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+  justify-content: end;
+}
+.contact .contact-form .form-right form .right-inp .btn-con button, .contact .row .form-right form .right-inp .btn-con button {
+  width: auto;
+  display: inline-block;
+  background: #fab700;
+  padding: 0px 50px;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 50px;
+  outline: none;
+  text-align: center;
+  border: 1px solid #fab700;
+  cursor: pointer;
+  transition: 0.4s ease;
+}
+.contact .contact-form .form-right form .right-inp .btn-con button:hover, .contact .row .form-right form .right-inp .btn-con button:hover {
+  background: transparent;
+  color: #fab700;
 }/*# sourceMappingURL=main.css.map */
