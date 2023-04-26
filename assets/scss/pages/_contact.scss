@@ -1,5 +1,6 @@
 .contact{
     padding: 120px  0;
+.container{
     .map{
         height: 420px;
         margin-bottom: 80px;
@@ -44,12 +45,12 @@
             }
         }
         .form-right{
-            width: 70%;
+            width: 80%;
             form{
-                width: 130%;
+                width: 100%;
                 display: flex;
                 .left-inp{
-                    width: 41%;
+                    width: 50%;
                    padding-right: 15px;
                     display: flex;
                     flex-direction: column;
@@ -69,7 +70,7 @@
                     }
                 }
                 .right-inp{
-                    width: 41%;
+                    width: 50%;
                     padding: 0 15px;
                     .text-con{
                      width: 100%;
@@ -114,7 +115,33 @@ button{
 }
                     }
                 }
+                @media(max-width:768px){
+                    flex-wrap: wrap;
+                    .left-inp{
+                        width: 100%;
+                    }
+                    .right-inp{
+                        width: 100%;
+                        padding-left: 0;
+                        .text-con{
+                         width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+        @media(max-width:992px){
+            flex-wrap: wrap;
+            .form-left{
+                max-width: 100%;
+                flex: 0 0 100%;
+margin-bottom: 20px;
+            }
+            .form-right{
+                max-width: 100%;
+                flex: 0 0 100%;
             }
         }
     }
+}
 }

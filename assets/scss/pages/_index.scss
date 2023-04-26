@@ -175,7 +175,7 @@
 }
 @media (max-width: 480px) {
   .services {
-    padding: 70px 0;
+    padding: 30px 0;
     .container {
       .row {
         .services-card-box {
@@ -309,6 +309,9 @@
 .meet {
   width: 100%;
   padding: 120px 0;
+  @media(max-width:380px){
+    padding:60px 0;
+  }
   .container {
     .meet-card-box {
       width: 100%;
@@ -469,6 +472,9 @@
   width: 100%;
   padding: 115px 0px;
   background: #fab700;
+  @media(max-width:380px){
+    padding:60px 0;
+  }
   .container {
     .row {
       justify-content: space-between;
@@ -535,6 +541,9 @@
 .features {
   width: 100%;
   padding: 120px 0;
+  @media(max-width:380px){
+    padding:60px 0;
+  }
   .container {
     .features-card-box {
       width: 100%;
@@ -633,6 +642,9 @@
   background: #f9f9ff;
   .container{
     padding: 120px 0;
+    @media(max-width:380px){
+      padding: 35px 0;
+    }
     .swiper-slide{
       width: 0;
       padding: 30px 0;
@@ -643,6 +655,9 @@
         padding: 40px;
         display: flex;
         transition: all .3s ease;
+        @media(max-width:380px){
+          flex-wrap: wrap;
+        }
         .card-img{
           padding-right: 25px;
           border-radius: 50%;
