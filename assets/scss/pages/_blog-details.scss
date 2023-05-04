@@ -7,7 +7,6 @@
         max-width: 66.66666%;
         flex: 0 0 66.66666%;
         padding: 0 15px;
-
         .single-image {
           img {
             max-width: 100%;
@@ -34,6 +33,27 @@
             }
             p {
               margin-bottom: 10px;
+            }
+          }
+          .blog-post-card-left{
+            .iconList {
+              display: flex;
+              gap: 17px;
+              justify-content: end;
+              .iconItem {
+                a {
+                  display: inline-block;
+                  line-height: 45px;
+                  i {
+                    color: #ccc;
+                    font-size: 14px;
+                    transition: 0.5s ease;
+                    &:hover {
+                      color: #fab700;
+                    }
+                  }
+                }
+              }
             }
           }
         }

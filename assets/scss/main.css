@@ -2147,6 +2147,23 @@ footer .container .footer-bottom .row .footer-social-icon-list .footer-icon-item
 .blog-details .container .row .blog-details-left-all .blog-details-post-card-left .blog-post-detials-card-left p {
   margin-bottom: 10px;
 }
+.blog-details .container .row .blog-details-left-all .blog-details-post-card-left .blog-post-card-left .iconList {
+  display: flex;
+  gap: 17px;
+  justify-content: end;
+}
+.blog-details .container .row .blog-details-left-all .blog-details-post-card-left .blog-post-card-left .iconList .iconItem a {
+  display: inline-block;
+  line-height: 45px;
+}
+.blog-details .container .row .blog-details-left-all .blog-details-post-card-left .blog-post-card-left .iconList .iconItem a i {
+  color: #ccc;
+  font-size: 14px;
+  transition: 0.5s ease;
+}
+.blog-details .container .row .blog-details-left-all .blog-details-post-card-left .blog-post-card-left .iconList .iconItem a i:hover {
+  color: #fab700;
+}
 .blog-details .container .row .blog-details-left-all .blog-details-left-text-cont .details-post-text {
   margin-top: 20px;
   margin-bottom: 30px;
